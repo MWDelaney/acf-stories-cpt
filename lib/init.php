@@ -26,18 +26,8 @@ class Init {
 		//add_action('admin_enqueue_scripts', array( $this, 'admin_scripts' ) );
 		//add_action( 'init', 'change_post_type_labels' );
 
-		add_filter('excerpt_more', 'stories_excerpt_more');
-
 	}
 	
-	// Replaces the excerpt "Read More" text by a link
-	function stories_excerpt_more($more) {
-	       global $post;
-		if("stories" == $post->post_type) {
-			return '';
-		}
-	}
-
 	/**
 	 * Enqueue admin scripts
 	 */
