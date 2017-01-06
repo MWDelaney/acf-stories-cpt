@@ -22,10 +22,8 @@ require __DIR__ . '/vendor/autoload.php';
 define( 'STORIES_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'STORIES_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
-use Init;
 $stories_init = new \MWD\CPT\Stories\Init();
 
-use BeaverBuilder;
 $stories_beaverbuilder = new \MWD\CPT\Stories\BeaverBuilder();
 
 
